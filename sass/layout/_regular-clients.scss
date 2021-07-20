@@ -1,0 +1,26 @@
+.regular-clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--basic-content-indentation));
+}
+.regular-clients-item {
+  margin-left: var(--basic-content-indentation);
+}
+.regular-clients-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill var(--transformation-time) var(--time-allocation-function),
+    background-color var(--transformation-time) var(--time-allocation-function);
+}
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
