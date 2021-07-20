@@ -9,7 +9,9 @@
 @import "./components/social-link-list";
 // LAYOUT
 // =====>STUDIO
-@import "./layout/header";
+@import "./components/logo";
+@import "./layout/header-nav";
+@import "./layout/header-contact";
 @import "./layout/hero";
 @import "./layout/features-company";
 @import "./layout/servises";
