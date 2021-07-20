@@ -207,19 +207,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .contact__item:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .contact__icons {
   margin-right: 10px;
-}
-
-.contact__list:not(:first-child) {
-  margin-left: 50px;
 }
 
 .contact__link {
