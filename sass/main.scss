@@ -5,8 +5,8 @@
 @import "./base/common";
 @import "./base/container";
 // COMPONENTS
-@import "./components/section__title";
-@import "./components/social-link-list";
+@import "./components/section-title";
+@import "./components/social-media";
 // LAYOUT
 // =====>STUDIO
 @import "./components/logo";
@@ -15,7 +15,6 @@
 @import "./layout/hero";
 @import "./layout/features-company";
 @import "./layout/servises";
-@import "./layout/hero";
 @import "./layout/team";
 @import "./layout/regular-clients";
 @import "./layout/footer";

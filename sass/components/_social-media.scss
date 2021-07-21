@@ -1,14 +1,14 @@
-.social-list {
+.social-media {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: -10px;
+  &__item {
+    margin-left: 10px;
+  }
 }
-.social-item {
-  margin-left: 10px;
-}
-.social-link {
+.social-media__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +18,9 @@
   border-radius: 50%;
   transition: fill var(--transformation-time) var(--time-allocation-function),
     background-color var(--transformation-time) var(--time-allocation-function);
-}
-.social-link:hover,
-.social-link:focus {
-  fill: var(--secondary-text-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+  }
 }

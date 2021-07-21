@@ -1,7 +1,4 @@
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 26px;
@@ -11,5 +8,17 @@
 
   &__accent {
     color: var(--accent-color);
+  }
+  &__header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__footer {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    color: var(--secondary-text-color);
   }
 }
