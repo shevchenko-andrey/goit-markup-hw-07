@@ -10,19 +10,19 @@
   background-repeat: no-repeat;
 
   padding: 200px 0;
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
 }
 
-.hero-title {
-  margin-bottom: 30px;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-.hero-button {
+.hero__button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -40,8 +40,8 @@
   transition: background-color var(--transformation-time)
       var(--time-allocation-function),
     box-shadow var(--transformation-time) var(--time-allocation-function);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

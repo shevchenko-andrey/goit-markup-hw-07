@@ -242,7 +242,7 @@ body {
   padding: 200px 0;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -252,7 +252,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.hero-button {
+.hero__button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -269,24 +269,23 @@ body {
   transition: background-color var(--transformation-time) var(--time-allocation-function), box-shadow var(--transformation-time) var(--time-allocation-function);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
-.feature-list {
+.company-features__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
 }
 
-.feature-list-item {
+.company-features__item {
   margin-left: 30px;
   flex-basis: calc(100% / 4 - var(--basic-content-indentation));
 }
 
-.feature-icon-container {
+.company-features__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +296,7 @@ body {
   background: #f5f4fa;
 }
 
-.feature-section-title {
+.company-features__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -307,7 +306,7 @@ body {
   color: var(--master-title-color);
 }
 
-.feature-text {
+.company-features__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--master-leter-spacing);
@@ -355,7 +354,7 @@ body {
   padding: 200px 0;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -365,7 +364,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.hero-button {
+.hero__button {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -382,8 +381,7 @@ body {
   transition: background-color var(--transformation-time) var(--time-allocation-function), box-shadow var(--transformation-time) var(--time-allocation-function);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
