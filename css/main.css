@@ -104,6 +104,16 @@ body {
   transition: fill var(--transformation-time) var(--time-allocation-function), background-color var(--transformation-time) var(--time-allocation-function);
 }
 
+.social-media__link--theme--gray {
+  fill: #afb1b8;
+  background-color: var(--secondary-text-color);
+}
+
+.social-media__link--theme--white {
+  fill: var(--secondary-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-media__link:hover, .social-media__link:focus {
   fill: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -401,22 +411,17 @@ body {
   color: var(--master-text-color);
 }
 
-.social-media__link--gray {
-  fill: #afb1b8;
-  background-color: var(--secondary-text-color);
-}
-
-.regular-clients-list {
+.regular-clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--basic-content-indentation));
 }
 
-.regular-clients-item {
+.regular-clients__item {
   margin-left: var(--basic-content-indentation);
 }
 
-.regular-clients-link {
+.regular-clients__link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -429,8 +434,7 @@ body {
   transition: fill var(--transformation-time) var(--time-allocation-function), background-color var(--transformation-time) var(--time-allocation-function);
 }
 
-.regular-clients-link:hover,
-.regular-clients-link:focus {
+.regular-clients__link:hover, .regular-clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -441,26 +445,16 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.location {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.7;
-  letter-spacing: var(--master-leter-spacing);
-  color: var(--secondary-text-color);
-  transition: color var(--transformation-time) var(--time-allocation-function);
-}
-
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-company {
+.address__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -470,17 +464,15 @@ body {
   transition: color var(--transformation-time) var(--time-allocation-function);
 }
 
-.location:hover,
-.address-company:hover {
+.address__link--location {
+  color: var(--secondary-text-color);
+}
+
+.address__link:hover {
   color: var(--accent-color);
 }
 
-.location:focus,
-.address-company:focus {
-  color: var(--accent-color);
-}
-
-.join-container {
+.our-social-media {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -488,7 +480,7 @@ body {
   margin-top: 12px;
 }
 
-.join {
+.our-social-media__join {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -496,11 +488,6 @@ body {
   letter-spacing: var(--master-leter-spacing);
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
-
-.social-media__link--white {
-  background: rgba(255, 255, 255, 0.1);
-  fill: var(--secondary-text-color);
 }
 
 .footer-form {
@@ -509,7 +496,7 @@ body {
   margin-top: 12px;
 }
 
-.footer-form-head {
+.footer-form__head {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -519,11 +506,17 @@ body {
   color: var(--secondary-text-color);
 }
 
-.form-input-btn-container {
+.footer-form__wrapper {
   display: flex;
 }
 
-.footer-form-input {
+.footer-form__icon {
+  margin-left: 10px;
+  fill: white;
+  background-color: none;
+}
+
+.footer-form__data-input {
   padding: 15px 16px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -539,15 +532,15 @@ body {
   transition: border-color var(--transformation-time) var(--time-allocation-function);
 }
 
-.footer-form-input::placeholder {
+.footer-form__data-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form-input:focus {
+.footer-form__data-input:focus {
   border-color: var(--accent-color);
 }
 
-.footer-form-btn {
+.footer-form__btn {
   display: flex;
   margin-left: 12px;
   justify-content: center;
@@ -566,15 +559,8 @@ body {
   color: var(--secondary-text-color);
 }
 
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+.footer-form__btn:hover, .footer-form__btn:focus {
   background-color: #188ce8;
-}
-
-.btn-send-icon {
-  margin-left: 10px;
-  fill: white;
-  background-color: none;
 }
 
 .backdrop {

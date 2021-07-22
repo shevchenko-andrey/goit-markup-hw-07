@@ -1,16 +1,9 @@
-.location {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.7;
-  letter-spacing: var(--master-leter-spacing);
-  color: var(--secondary-text-color);
-  transition: color var(--transformation-time) var(--time-allocation-function);
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.address-company {
+.address__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -18,13 +11,10 @@
   letter-spacing: var(--master-leter-spacing);
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transformation-time) var(--time-allocation-function);
-}
-
-.location:hover,
-.address-company:hover {
-  color: var(--accent-color);
-}
-.location:focus,
-.address-company:focus {
-  color: var(--accent-color);
+  &--location {
+    color: var(--secondary-text-color);
+  }
+  &:hover {
+    color: var(--accent-color);
+  }
 }
