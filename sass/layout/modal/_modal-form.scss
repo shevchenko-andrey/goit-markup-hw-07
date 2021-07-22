@@ -1,27 +1,29 @@
 .modal-form {
   padding: 40px;
+
+  &__head {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: var(--master-leter-spacing);
+    color: #212121;
+  }
+  &__field {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  &__wraper {
+    display: block;
+    position: relative;
+  }
 }
-.modal-form-head {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: var(--master-leter-spacing);
-  color: #212121;
-}
-.modal-form-field {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.modal-form-input-wraper {
-  display: block;
-  position: relative;
-}
-.modal-form-input {
+
+.modal-form__data-input {
   display: block;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -37,20 +39,21 @@
   transition: border-color var(--transformation-time)
       var(--time-allocation-function),
     fill var(--transformation-time) var(--time-allocation-function);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.modal-form-input:focus {
-  border-color: var(--accent-color);
-}
-.modal-form-input:focus + .modal-icon {
-  fill: var(--accent-color);
-}
-.modal-icon {
+
+.modal-form__icon {
   position: absolute;
   bottom: 50%;
   left: 15px;
   transform: translateY(50%);
+  .modal-form__data-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
-.modal-form-message {
+.modal-form__message {
   padding: 12px 16px;
   outline: none;
   margin-top: 4px;
@@ -69,18 +72,19 @@
   border-radius: 4px;
   transition: border-color var(--transformation-time)
     var(--time-allocation-function);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form-message:focus {
-  border-color: var(--accent-color);
-}
-.modal-button-submit {
+
+.modal-form__button {
   display: block;
   padding: 10px 55px;
   margin: 0 auto;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -94,65 +98,9 @@
   letter-spacing: 0.06em;
 
   color: var(--secondary-text-color);
-}
-.modal-button-submit:hover,
-.modal-button-submit:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-form-checkbox-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.modal-form-checkbox-label::before {
-  display: block;
-  content: "";
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-
-  border: 2px solid #212121;
-  border-radius: 4px;
-  transition: border var(--transformation-time) var(--time-allocation-function),
-    background-image var(--transformation-time) var(--time-allocation-function);
-}
-.modal-form-label-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: var(--master-leter-spacing);
-  text-decoration-line: underline;
-  color: var(--accent-color);
-}
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-image: url(../images/checkbox/checkbox-on.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-  object-fit: cover;
-  border: none;
-}
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  border-color: var(--accent-color);
-}
-.modal-form-checkbox {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

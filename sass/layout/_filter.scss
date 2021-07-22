@@ -1,10 +1,10 @@
-.button-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-left: -8px;
   margin-bottom: 50px;
 }
-.portfolio-button {
+.filter__button {
   margin-left: 8px;
   padding: 6px 22px;
 
@@ -21,6 +21,16 @@
   transition: color var(--transformation-time) var(--time-allocation-function),
     background-color var(--transformation-time) var(--time-allocation-function),
     box-shadow var(--transformation-time) var(--time-allocation-function);
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px #0000001f;
+
+    box-shadow: 0px 1px 2px 0px #00000014;
+
+    box-shadow: 0px 3px 1px 0px #0000001a;
+  }
 }
 .active {
   color: var(--secondary-text-color);
@@ -28,14 +38,4 @@
   transition: color var(--transformation-time) var(--time-allocation-function),
     background-color var(--transformation-time) var(--time-allocation-function),
     box-shadow var(--transformation-time) var(--time-allocation-function);
-}
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 2px 2px 0px #0000001f;
-
-  box-shadow: 0px 1px 2px 0px #00000014;
-
-  box-shadow: 0px 3px 1px 0px #0000001a;
 }

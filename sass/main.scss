@@ -1,6 +1,7 @@
 //UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/is-hidden";
 //BASE
 @import "./base/common";
 @import "./base/container";
@@ -24,6 +25,7 @@
 // =====>MODAL
 @import "./layout/modal/modal-windows";
 @import "./layout/modal/modal-form";
+@import "./layout/modal/modal-checkbox";
 // =====> PORTFOLIO
 @import "./layout/filter";
 @import "./layout/art-gallery";
