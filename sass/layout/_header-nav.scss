@@ -2,21 +2,14 @@
   border-bottom: 1px solid #ececec;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex-center();
   }
 }
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
 
   &__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     margin-left: auto;
     font-weight: 500;
     font-size: 14px;
@@ -34,8 +27,7 @@
 }
 
 .navigation__link {
-  display: flex;
-  justify-content: center;
+  @include flex-center();
   color: var(--master-title-color);
   padding-top: 32px;
   padding-bottom: 32px;

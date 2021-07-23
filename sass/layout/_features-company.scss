@@ -1,8 +1,6 @@
 .company-features {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-center();
     margin-left: calc(-1 * var(--basic-content-indentation));
   }
 
@@ -11,9 +9,7 @@
     flex-basis: calc(100% / 4 - var(--basic-content-indentation));
   }
   &__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     margin-bottom: var(--basic-content-indentation);
     height: 120px;
     border: none;

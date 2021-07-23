@@ -1,8 +1,5 @@
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -10,9 +7,7 @@
   letter-spacing: 0.02em;
 
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
   }
 
   &__item:not(:first-child) {
@@ -24,9 +19,7 @@
 }
 
 .contact__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--master-text-color);

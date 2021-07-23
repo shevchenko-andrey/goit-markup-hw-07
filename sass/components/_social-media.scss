@@ -1,17 +1,13 @@
 .social-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
+
   margin-left: -10px;
   &__item {
     margin-left: 10px;
   }
 }
 .social-media__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
 
   width: 44px;
   height: 44px;

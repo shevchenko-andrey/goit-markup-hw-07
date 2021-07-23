@@ -2,9 +2,7 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-center();
     margin-left: calc(-1 * var(--basic-content-indentation));
   }
   &__item {

@@ -91,8 +91,8 @@ body {
 .social-media {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: -10px;
 }
 
@@ -102,8 +102,9 @@ body {
 
 .social-media__link {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -159,19 +160,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .navigation {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .navigation__menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -189,6 +192,8 @@ body {
 
 .navigation__link {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   color: var(--master-title-color);
   padding-top: 32px;
@@ -220,8 +225,8 @@ body {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -231,8 +236,9 @@ body {
 
 .contact__item {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .contact__item:not(:first-child) {
@@ -245,8 +251,9 @@ body {
 
 .contact__link {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--master-text-color);
@@ -302,6 +309,7 @@ body {
 .company-features__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
 }
@@ -313,8 +321,9 @@ body {
 
 .company-features__wrapper {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-bottom: var(--basic-content-indentation);
   height: 120px;
   border: none;
@@ -346,6 +355,7 @@ body {
 .servises__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
 }
@@ -378,6 +388,7 @@ body {
 .team__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-left: calc(-1 * var(--basic-content-indentation));
 }
@@ -430,8 +441,8 @@ body {
 .regular-clients__link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   fill: #afb1b8;
   width: 170px;
   height: 92px;
@@ -548,10 +559,11 @@ body {
 
 .footer-form__btn {
   display: flex;
-  margin-left: 12px;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 10px 28px;
+  margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -597,8 +609,9 @@ body {
   top: 7px;
   right: 8px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 0;
   background-color: var(--secondary-text-color);
   width: 30px;
@@ -723,6 +736,7 @@ body {
 
 .checkbox-field {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -784,6 +798,8 @@ body {
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-left: -8px;
   margin-bottom: 50px;

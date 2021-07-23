@@ -1,9 +1,7 @@
 .team {
   background-color: #f5f4fa;
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-center();
     margin-left: calc(-1 * var(--basic-content-indentation));
   }
   &__item {

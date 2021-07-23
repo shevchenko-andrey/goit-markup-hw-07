@@ -10,10 +10,7 @@
 }
 
 .regular-clients__link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex-center();
   fill: #afb1b8;
   width: 170px;
   height: 92px;

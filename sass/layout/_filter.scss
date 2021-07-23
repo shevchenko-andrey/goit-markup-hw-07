@@ -1,6 +1,5 @@
 .filter {
-  display: flex;
-  justify-content: center;
+  @include flex-center();
   margin-left: -8px;
   margin-bottom: 50px;
 }
