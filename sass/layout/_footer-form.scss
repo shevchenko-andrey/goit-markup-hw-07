@@ -14,6 +14,11 @@
   &__wrapper {
     display: flex;
   }
+  &__icon {
+    margin-left: 10px;
+    fill: white;
+    background-color: none;
+  }
 }
 
 .footer-form__data-input {
@@ -31,11 +36,7 @@
   color: var(--secondary-text-color);
   transition: border-color var(--transformation-time)
     var(--time-allocation-function);
-  &__icon {
-    margin-left: 10px;
-    fill: white;
-    background-color: none;
-  }
+  
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }

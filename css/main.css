@@ -516,6 +516,12 @@ body {
   display: flex;
 }
 
+.footer-form__icon {
+  margin-left: 10px;
+  fill: white;
+  background-color: none;
+}
+
 .footer-form__data-input {
   padding: 15px 16px;
   width: 358px;
@@ -530,12 +536,6 @@ body {
   letter-spacing: var(--master-leter-spacing);
   color: var(--secondary-text-color);
   transition: border-color var(--transformation-time) var(--time-allocation-function);
-}
-
-.footer-form__data-input__icon {
-  margin-left: 10px;
-  fill: white;
-  background-color: none;
 }
 
 .footer-form__data-input::placeholder {
